@@ -1,0 +1,16 @@
+{
+
+	"column_unique_tests":{
+
+
+		"query" : "SELECT Count( replace_column ), Count( DISTINCT replace_column ) FROM replace_table ;"
+
+	},
+
+	"find_increase_in_rows" :{
+
+		"query" : " SELECT 100.0*(currday.currcount - prevday.prevcount)/ prevday.prevcount As PercentDiff FROM (select count(curr.replace_column) as currcount from replace_table as curr where curr.replace_column < '2018-08-02' and curr.replace_column >= '2018-08-01') as currday, (select count(prev.replace_column) as prevcount from replace_table as prev where prev.replace_column <'2018-08-01' and prev.replace_column >= '2018-07-31') as prevday;"
+	
+	}
+
+}

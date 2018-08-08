@@ -1,0 +1,30 @@
+{
+    
+    "test_table_1" :[
+        {
+
+        "test_name" :"column_unique_tests",
+        "test_table_name" : "bharath",
+        "test_column" : "id"
+
+        }
+
+    ],
+
+
+
+    "test_table_2" :[
+        {
+
+            "test_name" : "find_increase_in_rows",
+            "test_table_name" : "sqltime",
+            "test_column" : "time"
+
+        }
+    ]
+
+
+
+
+
+}
